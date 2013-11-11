@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CA5D22D18304DB200665ED0 /* COMProteinaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5D22C18304DB200665ED0 /* COMProteinaViewController.m */; };
+		9CA5D2301830519E00665ED0 /* COMHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA5D22F1830519E00665ED0 /* COMHome.m */; };
 		9CA6272218295F8E005FE50A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA6272118295F8E005FE50A /* Foundation.framework */; };
 		9CA6272418295F8E005FE50A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA6272318295F8E005FE50A /* CoreGraphics.framework */; };
 		9CA6272618295F8E005FE50A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA6272518295F8E005FE50A /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9CA5D22B18304DB200665ED0 /* COMProteinaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMProteinaViewController.h; sourceTree = "<group>"; };
+		9CA5D22C18304DB200665ED0 /* COMProteinaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMProteinaViewController.m; sourceTree = "<group>"; };
+		9CA5D22E1830519E00665ED0 /* COMHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COMHome.h; sourceTree = "<group>"; };
+		9CA5D22F1830519E00665ED0 /* COMHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COMHome.m; sourceTree = "<group>"; };
 		9CA6271E18295F8E005FE50A /* Compramela.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compramela.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA6272118295F8E005FE50A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CA6272318295F8E005FE50A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +88,8 @@
 		9CA6271518295F8E005FE50A = {
 			isa = PBXGroup;
 			children = (
+				9CA5D22B18304DB200665ED0 /* COMProteinaViewController.h */,
+				9CA5D22C18304DB200665ED0 /* COMProteinaViewController.m */,
 				9CA6272718295F8E005FE50A /* Compramela */,
 				9CA6274618295F8E005FE50A /* CompramelaTests */,
 				9CA6272018295F8E005FE50A /* Frameworks */,
@@ -115,6 +123,8 @@
 				9CA6273018295F8E005FE50A /* COMAppDelegate.h */,
 				9CA6273118295F8E005FE50A /* COMAppDelegate.m */,
 				9CA6273318295F8E005FE50A /* Main.storyboard */,
+				9CA5D22E1830519E00665ED0 /* COMHome.h */,
+				9CA5D22F1830519E00665ED0 /* COMHome.m */,
 				9CA6273618295F8E005FE50A /* COMViewController.h */,
 				9CA6273718295F8E005FE50A /* COMViewController.m */,
 				9CA6273918295F8E005FE50A /* Images.xcassets */,
@@ -250,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA5D2301830519E00665ED0 /* COMHome.m in Sources */,
 				9CA6273218295F8E005FE50A /* COMAppDelegate.m in Sources */,
 				9CA6273818295F8E005FE50A /* COMViewController.m in Sources */,
+				9CA5D22D18304DB200665ED0 /* COMProteinaViewController.m in Sources */,
 				9CA6272E18295F8E005FE50A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +473,7 @@
 				9CA6275218295F8E005FE50A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CA6275318295F8E005FE50A /* Build configuration list for PBXNativeTarget "CompramelaTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				9CA6275518295F8E005FE50A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
