@@ -46,14 +46,42 @@
 
 -(void)loadInitialData{
     COMHome *item1 = [[COMHome alloc] init];
-    item1.foodName = @"Proteinas";
+    item1.foodName = @"Bebidas";
     [self.mainFoods addObject:item1];
     COMHome *item2 = [[COMHome alloc] init];
-    item2.foodName = @"Frutas";
+    item2.foodName = @"Carnes";
     [self.mainFoods addObject:item2];
     COMHome *item3 = [[COMHome alloc] init];
-    item3.foodName =@"Verduras";
+    item3.foodName =@"Congelados";
     [self.mainFoods addObject:item3];
+    COMHome *item4 = [[COMHome alloc] init];
+    item4.foodName =@"Cuidado Personal";
+    [self.mainFoods addObject:item4];
+    COMHome *item5 = [[COMHome alloc] init];
+    item5.foodName =@"Desayunos";
+    [self.mainFoods addObject:item5];
+    COMHome *item6 = [[COMHome alloc] init];
+    item6.foodName =@"Frascos/Enlatados";
+    [self.mainFoods addObject:item6];
+    COMHome *item7 = [[COMHome alloc] init];
+    item7.foodName =@"Frutas";
+    [self.mainFoods addObject:item7];
+    COMHome *item8 = [[COMHome alloc] init];
+    item8.foodName =@"Pasta, Arroz & Granos";
+    [self.mainFoods addObject:item8];
+    COMHome *item9 = [[COMHome alloc] init];
+    item9.foodName =@"Proteina";
+    [self.mainFoods addObject:item9];
+    COMHome *item10 = [[COMHome alloc] init];
+    item10.foodName =@"Sazones/Especies";
+    [self.mainFoods addObject:item10];
+    COMHome *item11 = [[COMHome alloc] init];
+    item11.foodName =@"Varios";
+    [self.mainFoods addObject:item11];
+    COMHome *item12 = [[COMHome alloc] init];
+    item12.foodName =@"Verduras";
+    [self.mainFoods addObject:item12];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -86,6 +114,12 @@
     cell.textLabel.text = mainFoods.foodName;
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"Hello");
+    [self performSegueWithIdentifier:@"seg" sender:[tableView cellForRowAtIndexPath:indexPath]];
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 /*
@@ -127,7 +161,7 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -135,8 +169,17 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"seg"]) {
+        UIViewController * CONTROLLER = segue.destinationViewController;
+        UITableViewCell *cell = (UITableViewCell*)sender;
+        CONTROLLER.title = cell.textLabel.text;
+    }
+    
+    
+    
 }
 
- */
+
 
 @end
