@@ -17,7 +17,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self showTitle];
     
     //self.navigationItem.title = @"Frutas";
 	// Do any additional setup after loading the view, typically from a nib.
@@ -29,9 +28,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)showTitle
-{
-    self.navigationItem.title = @"Frutas";
-}
+
 
 @end
